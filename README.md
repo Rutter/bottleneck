@@ -1,10 +1,5 @@
 # bottleneck
 
-[![Downloads][npm-downloads]][npm-url]
-[![version][npm-version]][npm-url]
-[![License][npm-license]][license-url]
-
-
 Bottleneck is a lightweight and zero-dependency Task Scheduler and Rate Limiter for Node.js and the browser.
 
 Bottleneck is an easy solution as it adds very little complexity to your code. It is battle-hardened, reliable and production-ready and used on a large scale in private companies and open source software.
@@ -41,16 +36,22 @@ It supports **Clustering**: it can rate limit jobs across multiple Node.js insta
 
 <!-- tocstop -->
 
+## Why fork?
+
+This is a fork of https://github.com/SGrondin/bottleneck:
+
+- Compile for Node 10+ target to use native `async` / `await`. Original motivation is better stack traces.
+
 ## Install
 
 ```
-npm install --save bottleneck
+npm install --save @rutter/bottleneck
 ```
 
 ```js
-import Bottleneck from "bottleneck";
+import Bottleneck from "@rutter/bottleneck";
 
-// Note: To support older browsers and Node <6.0, you must import the ES5 bundle instead.
+// Note: To support older browsers and Node <10.0, you must import the ES5 bundle instead.
 var Bottleneck = require("bottleneck/es5");
 ```
 
@@ -1023,7 +1024,4 @@ All contributions are appreciated and will be considered.
 
 [license-url]: https://github.com/SGrondin/bottleneck/blob/master/LICENSE
 
-[npm-url]: https://www.npmjs.com/package/bottleneck
-[npm-license]: https://img.shields.io/npm/l/bottleneck.svg?style=flat
-[npm-version]: https://img.shields.io/npm/v/bottleneck.svg?style=flat
-[npm-downloads]: https://img.shields.io/npm/dm/bottleneck.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/@rutter/bottleneck
