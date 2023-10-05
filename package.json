@@ -1,6 +1,6 @@
 {
   "name": "@rutter/bottleneck",
-  "version": "2.19.5",
+  "version": "2.19.6",
   "description": "Distributed task scheduler and rate limiter",
   "main": "lib/index.js",
   "typings": "bottleneck.d.ts",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
+    "@token-cjg/leakage": "^0.6.0",
     "@types/es6-promise": "0.0.33",
     "assert": "^1.5.0",
     "coffeescript": "2.7.x",
@@ -50,8 +51,5 @@
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "typescript": "^2.6.2"
-  },
-  "dependencies": {
-    "@token-cjg/leakage": "^0.6.0"
   }
 }
